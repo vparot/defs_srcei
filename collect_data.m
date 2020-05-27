@@ -72,7 +72,7 @@ ylim(ylim.*[0 1])
 xlim([1 51])
 xlabel 'Semana'
 ylabel 'Defunciones'
-legend({'Proyección ajustada desde 2010','Defunciones 2020 (hasta 25/05)'},'location','se')
+legend({'Proyección ajustada desde 2010','Defunciones 2020 (hasta 26/05)'},'location','se')
 title({'Defunciones por cualquier causa registradas en Chile','fuente: estadísticas Registro Civil'})
 saveas(gcf,'out_00.png')
 
@@ -123,7 +123,7 @@ for itReg = 1:numel(uRegion)-1
     xlim([1 51])
     xlabel 'Semana'
     ylabel 'Defunciones'
-    legend({'Proyección ajustada desde 2010','Defunciones 2020 (hasta 25/05)'},'location','se')
+    legend({'Proyección ajustada desde 2010','Defunciones 2020 (hasta 26/05)'},'location','se')
     title({'Defunciones por cualquier causa',uRegion{itReg}})
     saveas(gcf,sprintf('out_%02d.png',itReg))
 end
